@@ -1,4 +1,15 @@
 #include<stdio.h>
+void read(int *arr)
+{
+int i,n;
+printf("Enter the no.of elements\n");
+scanf("%d",&n);
+printf("Enter the elements\n");
+for(i=0;i<n;i++)
+{
+scanf("%d",&arr[i]);
+}
+}
 int sort(int *arr)
 {
 
@@ -19,7 +30,8 @@ int sort(int *arr)
 }
 int main()
 {
-int arr[5]={23,12,56,34,10},n,j;
+int arr[5],n,j;
+read(arr);
 sort(arr);
 printf("Sorted Array\n");
 for(j=0;j<5;j++)
