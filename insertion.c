@@ -1,7 +1,7 @@
 #include<stdio.h>
-int main()
+int sort(int *arr)
 {
-int arr[5]={23,12,56,34,10},n;
+
    int i, key, j;
    for (i = 1; i < 5; i++)
    {
@@ -16,10 +16,14 @@ int arr[5]={23,12,56,34,10},n;
        }
        arr[j+1] = key;
    }
-
+}
+int main()
+{
+int arr[5]={23,12,56,34,10},n,j;
+sort(arr);
 printf("Sorted Array\n");
-for(i=0;i<5;i++)
-printf("%d ",arr[i]);
+for(j=0;j<5;j++)
+printf("%d ",arr[j]);
 printf("\n");
 }
 
